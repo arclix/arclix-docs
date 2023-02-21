@@ -1,0 +1,18 @@
+.features {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    width: 100%;
+    background: var(--ifm-color-primary);
+}
+
+.featureSvg {
+    height: 200px;
+    width: 200px;
+}
+
+.feature__card {
+    background: var(--ifm-col-background-color) !important;
+    padding: 1rem 2rem !important;
+    border-radius: 4px;
+}

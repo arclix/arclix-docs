@@ -1,0 +1,12 @@
+.footer--dark {
+    background: var(--ifm-footer-theme-background-color);
+}
+
+.footer__bottom {
+    border-top: 1.5px solid var(--ifm-footer-theme-border-color);
+}
+
+.footer__copyright {
+    text-align: left;
+    margin-top: 0.5rem;
+}

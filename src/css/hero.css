@@ -1,0 +1,14 @@
+.hero__subtitle {
+    color: var(--ifm-hero-subtitle-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.hero__button {
+    background: var(--ifm-hero-button-background-color);
+    border: none;
+    border-radius: 4px !important;
+    padding: 0.75rem 2rem;
+    color: var(--ifm-hero-button-color) !important;
+    font-weight: 700;
+}
