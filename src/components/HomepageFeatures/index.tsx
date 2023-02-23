@@ -1,5 +1,5 @@
 import React from "react";
-import clsx from "clsx";
+import Feature from "../Feature/Feature";
 import styles from "./styles.module.css";
 
 type FeatureItem = {
@@ -42,22 +42,6 @@ const FeatureList: FeatureItem[] = [
         ),
     },
 ];
-
-function Feature({ title, Svg, description }: FeatureItem) {
-    return (
-        <div className={clsx("col col--4")}>
-            <div className="text--center">
-                {/* <Svg className={styles.featureSvg} role="img" /> */}
-            </div>
-            <div
-                className={`text--center padding-horiz--md ${styles["feature__card"]}`}
-            >
-                <h3>{title}</h3>
-                <p>{description}</p>
-            </div>
-        </div>
-    );
-}
 
 export default function HomepageFeatures(): JSX.Element {
     return (

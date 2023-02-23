@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: "Arclix",
+    title: "An Open Source React CLI.",
     tagline:
         "An Open Source CLI with Set Up and Component Generation for React.",
     favicon: "img/favicon.ico",
@@ -24,7 +24,6 @@ const config = {
 
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
-
     // Even if you don't use internalization, you can use this field to set useful
     // metadata like html lang. For example, if your site is Chinese, you may want
     // to replace "en" with "zh-Hans".
@@ -63,7 +62,7 @@ const config = {
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
             // Replace with your project's social card
-            image: "img/docusaurus-social-card.jpg",
+            // image: "img/docusaurus-social-card.jpg",
             // algolia: {
             //     apiKey: "04f78ee41d9067a9417662908de0a54d",
             //     indexName: "arclix-docs",
@@ -93,48 +92,48 @@ const config = {
             },
             footer: {
                 style: "dark",
-                links: [
-                    {
-                        title: "Docs",
-                        items: [
-                            {
-                                label: "Tutorial",
-                                to: "/docs/intro",
-                            },
-                        ],
-                    },
-                    {
-                        title: "Community",
-                        items: [
-                            {
-                                label: "Stack Overflow",
-                                href: "https://stackoverflow.com/questions/tagged/arclix",
-                            },
-                            {
-                                label: "Discord",
-                                href: "https://discordapp.com/invite/docusaurus",
-                            },
-                            {
-                                label: "Twitter",
-                                href: "https://twitter.com/docusaurus",
-                            },
-                        ],
-                    },
-                    {
-                        title: "More",
-                        items: [
-                            // {
-                            //     label: "Blog",
-                            //     to: "/blog",
-                            // },
-                            {
-                                label: "GitHub",
-                                href: "https://github.com/jitiendran/arclix",
-                            },
-                        ],
-                    },
-                ],
-                copyright: `Copyright © ${new Date().getFullYear()} Arclix.`,
+                // links: [
+                //     {
+                //         title: "Docs",
+                //         items: [
+                //             {
+                //                 label: "Tutorial",
+                //                 to: "/docs/intro",
+                //             },
+                //         ],
+                //     },
+                //     {
+                //         title: "Community",
+                //         items: [
+                //             {
+                //                 label: "Stack Overflow",
+                //                 href: "https://stackoverflow.com/questions/tagged/arclix",
+                //             },
+                //             {
+                //                 label: "Discord",
+                //                 href: "https://discordapp.com/invite/docusaurus",
+                //             },
+                //             {
+                //                 label: "Twitter",
+                //                 href: "https://twitter.com/docusaurus",
+                //             },
+                //         ],
+                //     },
+                //     {
+                //         title: "More",
+                //         items: [
+                //             // {
+                //             //     label: "Blog",
+                //             //     to: "/blog",
+                //             // },
+                //             {
+                //                 label: "GitHub",
+                //                 href: "https://github.com/jitiendran/arclix",
+                //             },
+                //         ],
+                //     },
+                // ],
+                copyright: `Copyright © ${new Date().getFullYear()} Jitiendran KS & Arclix Contributors.`,
             },
             prism: {
                 theme: lightCodeTheme,

@@ -9,4 +9,5 @@
 .footer__copyright {
     text-align: left;
     margin-top: 0.5rem;
+    color: var(--ifm-footer-theme-color);
 }
