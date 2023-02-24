@@ -11,6 +11,21 @@
     width: 200px;
 }
 
+.featureIcon {
+    background: var(--ifm-feature-icon-bg);
+    border-radius: 10px;
+    padding: 0.3rem 0.5rem;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.featureImg {
+    width: 40px;
+}
+
 .feature__card {
     background: var(--ifm-col-background-color) !important;
     padding: 1rem 2rem !important;

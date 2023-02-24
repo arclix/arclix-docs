@@ -76,17 +76,25 @@
 }
 
 @media screen and (max-width: 500px) {
+    .buttons {
+        gap: 2rem;
+    }
+
     .heroTitle,
     .heroTagTitle {
         line-height: 50px;
     }
 
     .heroTitle {
-        font-size: 45px;
+        font-size: 50px;
     }
 
     .heroTagTitle {
         font-size: 28px;
+    }
+
+    .heroContainer {
+        padding: 0;
     }
 }
 

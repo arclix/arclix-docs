@@ -1,0 +1,29 @@
+.tool {
+    padding: 4rem 0;
+}
+
+.tool__title {
+    text-align: center;
+}
+
+.tool__container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5rem;
+    margin-top: 3rem;
+}
+
+.tool__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.tool__img {
+    width: 70px;
+    filter: invert(var(--ifm-tool-img-filter));
+}

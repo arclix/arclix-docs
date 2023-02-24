@@ -12,3 +12,9 @@
     color: var(--ifm-hero-button-color) !important;
     font-weight: 700;
 }
+
+@media screen and (max-width: 500px) {
+    .hero {
+        padding: 1rem !important;
+    }
+}
