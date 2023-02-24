@@ -9,7 +9,7 @@ const config = {
     title: "An Open Source React CLI.",
     tagline:
         "An Open Source CLI with Set Up and Component Generation for React.",
-    favicon: "img/favicon.ico",
+    favicon: "img/favicon.png",
 
     // Set the production url of your site here
     url: "https://your-docusaurus-test-site.com",
@@ -19,7 +19,7 @@ const config = {
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
-    organizationName: "jitiendran", // Usually your GitHub org/user name.
+    organizationName: "arclix", // Usually your GitHub org/user name.
     projectName: "arclix", // Usually your repo name.
 
     onBrokenLinks: "throw",
@@ -84,7 +84,7 @@ const config = {
                     },
                     // { to: "/blog", label: "Blog", position: "left" },
                     {
-                        href: "https://github.com/jitiendran/arclix",
+                        href: "https://github.com/arclix/arclix-cli",
                         label: "GitHub",
                         position: "right",
                     },

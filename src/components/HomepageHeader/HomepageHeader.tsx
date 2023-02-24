@@ -26,7 +26,7 @@ const HomepageHeader = () => {
                         </Link>
                         <Link
                             className={`button button--secondary button--lg hero__button ${styles.heroButton} ${styles.githubButton}`}
-                            to="https://github.com/jitiendran/arclix"
+                            to="https://github.com/arclix/arclix-cli"
                         >
                             GITHUB
                             <svg
