@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
     title: "An Open Source React CLI.",
     tagline:
-        "An Open Source CLI with Set Up and Component Generation for React.",
+        "An Open Source CLI with Creation and Component Generation for React.",
     favicon: "img/favicon.png",
 
     // Set the production url of your site here
@@ -84,7 +84,7 @@ const config = {
                     },
                     // { to: "/blog", label: "Blog", position: "left" },
                     {
-                        href: "https://github.com/arclix/arclix-cli",
+                        href: "https://github.com/arclix/core",
                         label: "GitHub",
                         position: "right",
                     },
