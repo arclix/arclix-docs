@@ -8,8 +8,8 @@ import Tools from "../components/Tools/Tools";
 export default function Home(): JSX.Element {
     return (
         <Layout
-            title="Arclix"
-            description="Description will go into a meta tag in <head />"
+            title=""
+            description="An Open Source CLI with Creation and Component Generation for React. <head />"
         >
             <HomepageHeader />
             <main>

@@ -8,6 +8,7 @@
 
 .navbar__link {
     font-size: 1.1rem;
+    color: inherit;
 }
 
 .navbar__link:hover {

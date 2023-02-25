@@ -5,7 +5,6 @@
 }
 
 .get-started__img {
-    width: 550px;
     padding: 1em;
 }
 
@@ -17,6 +16,7 @@
     font-size: 2.5rem;
     font-weight: 700;
     background-image: linear-gradient(180deg, rgb(9 211 172) 30%, #4b4b52);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -52,13 +52,10 @@
         padding: 2rem 0;
     }
 
-    .get-started__img {
-        padding: 0;
-    }
-
     .get-started__title {
         font-size: 2.2rem;
         background: linear-gradient(210deg, rgb(9 211 172) 30%, #4b4b52);
+        background-clip: text;
         -webkit-background-clip: text;
     }
 
