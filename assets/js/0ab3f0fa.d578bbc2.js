@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkarclix_docs=self.webpackChunkarclix_docs||[]).push([[778],{9724:s=>{s.exports=JSON.parse('{"permalink":"/arclix-docs/blog/tags/docusaurus","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
