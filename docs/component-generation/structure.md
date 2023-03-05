@@ -26,11 +26,13 @@ The structure of the component depends on template, styles and the flags you use
 
 ### Flags
 
-| Flag       | Description                                    |
-| ---------- | ---------------------------------------------- |
-| -p --path  | Generates component based on the path.         |
-| --flat     | Generates component without parent folder.     |
-| --skipTest | Skip the test file while generating component. |
+| Flag             | Description                                    |
+| ---------------- | ---------------------------------------------- |
+| -p --path [path] | Generates component based on the path.         |
+| --flat           | Generates component without parent folder.     |
+| --scopeStyle     | Scopes the style to the component.             |
+| --skipTest       | Skip the test file while generating component. |
+| -v --version     | Displays version number of Arclix in use.      |
 
 ## Generate component
 
@@ -66,6 +68,24 @@ npx generate component [COMPONENT NAME] --flat
 
 ```
 ├── [COMPONENT NAME].css
+├── [COMPONENT NAME].jsx
+└── [COMPONENT NAME].test.jsx
+```
+
+### With Scoped Style modules
+
+To generate component with scoped style modules use `--scopeStyle` flag.
+
+#### Command
+
+```bash
+npx generate component [COMPONENT NAME] --scopeStyle"
+```
+
+#### Structure
+
+```
+├── [COMPONENT NAME].module.css
 ├── [COMPONENT NAME].jsx
 └── [COMPONENT NAME].test.jsx
 ```
