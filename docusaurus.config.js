@@ -15,7 +15,7 @@ const config = {
     url: "https://arclix.github.io",
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
-    baseUrl: "/arclix-docs/",
+    baseUrl: "/arclix-docs",
 
     organizationName: "arclix",
     projectName: "arclix-docs",

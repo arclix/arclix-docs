@@ -32,8 +32,10 @@ or
 yarn test
 ```
 
+:::info
 Runs the test watcher in an interactive mode provided by [Create React App](https://create-react-app.dev/) by `Facebook`.
 By default, runs tests related to files changed since the last commit.
+:::
 
 [Read more about testing.](https://facebook.github.io/create-react-app/docs/running-tests)
 
@@ -49,8 +51,10 @@ or
 yarn build
 ```
 
+:::info
 Builds the app for production to the `build` folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
+:::
 
 The build is minified and the filenames include the hashes.
 

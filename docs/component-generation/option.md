@@ -35,8 +35,9 @@ This will create a separate `index.js|.ts` file and export everything within the
 So instead of importing with foldername like `import [COMPONENT NAME] from "./[COMPONENT NAME]/[COMPONENT NAME]"`
 we can do `import { [COMPONENT NAME] } from "./[COMPONENT NAME]"`.
 
-> **Note**
-> This will create separate file named `index.js|.ts` for each component
+:::info
+This will create separate file named `index.js|.ts` for each component
+:::
 
 #### Structure
 

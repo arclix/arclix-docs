@@ -24,4 +24,6 @@ The above command will
 
 -   generate it inside `src` directory by default If you run the command in the root folder.
 
-**_Note:_** You cannot run this command outside of `React` project .
+:::caution
+You cannot run this command outside of `React` project .
+:::
