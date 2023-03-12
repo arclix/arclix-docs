@@ -12,7 +12,9 @@ To create a React app run this command:
 npx arclix create [PROJECT NAME]
 ```
 
-**_Note:_** It uses [Create React App](https://create-react-app.dev/) by `Facebook` as a base to create a react project and add additional dependencies according to your needs.
+:::info
+It uses [Create React App](https://create-react-app.dev/) by `Facebook` as a base to create a react project and add additional dependencies according to your needs.
+:::
 
 After running the `create` command you'll be prompted with following questions
 
