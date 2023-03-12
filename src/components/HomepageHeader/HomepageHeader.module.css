@@ -86,7 +86,7 @@
     }
 
     .heroTitle {
-        font-size: 50px;
+        display: none;
     }
 
     .heroTagTitle {
@@ -95,12 +95,17 @@
 
     .heroContainer {
         padding: 0;
+        padding: 0;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0;
+        margin-bottom: 2rem;
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 375px) {
     .heroButton {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
         padding: 0.5rem 1rem;
     }
 }

@@ -5,6 +5,7 @@ const sidebars = {
         {
             type: "category",
             label: "Create App",
+            collapsed: false,
             items: [
                 "create-app/create-an-app",
                 "create-app/project-structure",
@@ -14,9 +15,11 @@ const sidebars = {
         {
             type: "category",
             label: "Component Generation",
+            collapsed: false,
             items: [
                 "component-generation/generate",
                 "component-generation/structure",
+                "component-generation/option",
                 "component-generation/example",
             ],
         },

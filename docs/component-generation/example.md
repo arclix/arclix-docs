@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # Example Component
@@ -7,13 +7,13 @@ sidebar_position: 3
 For example consider that your React project uses `JavaScript` as template and `CSS` as Styling and we generate component using:
 
 ```bash
-npx generate component Hero
+npx arclix generate component Hero
 ```
 
 or
 
 ```bash
-npx g c Hero
+npx arclix g c Hero
 ```
 
 Then the component generated will have the structure:
