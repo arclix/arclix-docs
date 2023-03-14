@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkarclix_docs=self.webpackChunkarclix_docs||[]).push([[8926],{96:l=>{l.exports=JSON.parse('{"permalink":"/arclix-docs/blog/tags/hola","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

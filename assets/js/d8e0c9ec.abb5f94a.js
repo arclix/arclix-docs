@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkarclix_docs=self.webpackChunkarclix_docs||[]).push([[259],{9971:l=>{l.exports=JSON.parse('{"label":"hello","permalink":"/arclix-docs/blog/tags/hello","allTagsPath":"/arclix-docs/blog/tags","count":2}')}}]);
