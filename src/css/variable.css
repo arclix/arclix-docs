@@ -14,7 +14,7 @@
     --ifm-link-color: #fca311;
     --ifm-link-hover-color: #1c1e21;
     --ifm-hero-subtitle-color: #606770;
-    --ifm-hero-button-background-color: rgba(9, 211, 172, 0.93) 30%;
+    --ifm-hero-button-background-color: rgba(9, 211, 172, 0.85) 30%;
     --ifm-hero-button-color: #21222c;
     --ifm-col-background-color: #f6f6f7;
     --ifm-footer-theme-background-color: #ffffff;
@@ -45,7 +45,7 @@
     --ifm-link-color: #e9c46a;
     --ifm-link-hover-color: #ffffff;
     --ifm-hero-subtitle-color: #a7a9b6;
-    --ifm-hero-button-color: #fffffff9;
+    --ifm-hero-button-color: #ffffff;
     --ifm-col-background-color: rgb(43, 46, 58);
     --ifm-footer-theme-background-color: #21222c !important;
     --ifm-footer-theme-border-color: hsla(0, 0%, 100%, 0.1);

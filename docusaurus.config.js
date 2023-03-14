@@ -58,12 +58,12 @@ const config = {
         ({
             // Replace with your project's social card
             // image: "img/docusaurus-social-card.jpg",
-            // algolia: {
-            //     apiKey: "04f78ee41d9067a9417662908de0a54d",
-            //     indexName: "arclix-docs",
-            //     contextualSearch: true,
-            //     appId: "WFYK9B663W",
-            // },
+            algolia: {
+                apiKey: "9e850cce1205829df9f18fe094b0ef34",
+                indexName: "arclix",
+                contextualSearch: true,
+                appId: "PC619Z89Q9",
+            },
             colorMode: {
                 defaultMode: "dark",
             },
