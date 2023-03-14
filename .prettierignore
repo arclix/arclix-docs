@@ -1,0 +1,4 @@
+build/
+.docusaurus/
+package-lock.json
+LICENSE.md
