@@ -37,7 +37,7 @@
 }
 
 @media screen and (max-width: 400px) {
-    .searchBox_node_modules-\@docusaurus-theme-classic-lib-theme-Navbar-Search-styles-module {
-        right: 4rem !important;
+    .navbar__items--right > :last-child {
+        right: 4rem;
     }
 }
