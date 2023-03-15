@@ -44,7 +44,11 @@ const HomepageHeader = () => {
                         </Link>
                     </div>
                 </section>
-                <img src="img/arclix.png" alt="Arclix Logo" />
+                <img
+                    className={styles.heroImg}
+                    src="svg/arclix.svg"
+                    alt="Arclix Logo"
+                />
             </article>
         </header>
     );

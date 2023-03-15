@@ -40,6 +40,10 @@
     gap: 0.5rem;
 }
 
+.heroImg {
+    width: 500px;
+}
+
 .githubButton {
     background: var(--ifm-col-background-color);
 }
@@ -73,6 +77,15 @@
     .heroSection {
         text-align: center;
     }
+
+    .heroContainer {
+        padding: 0;
+        padding: 0;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0;
+        margin-bottom: 2rem;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -91,15 +104,6 @@
 
     .heroTagTitle {
         font-size: 28px;
-    }
-
-    .heroContainer {
-        padding: 0;
-        padding: 0;
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 0;
-        margin-bottom: 2rem;
     }
 }
 
