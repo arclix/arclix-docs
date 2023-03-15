@@ -88,6 +88,21 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .heroSection {
+        max-width: 50%;
+    }
+    .heroImg {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .heroSection {
+        max-width: unset;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .buttons {
         gap: 2rem;
