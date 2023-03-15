@@ -11,16 +11,16 @@ const tools = [
         img: "img/node.png",
     },
     {
-        text: "Babel",
-        img: "img/babel.png",
-    },
-    {
-        text: "Webpack",
-        img: "img/webpack.png",
+        text: "Prettier",
+        img: "img/prettier.png",
     },
     {
         text: "ESLint",
         img: "img/eslint.png",
+    },
+    {
+        text: "Vitest",
+        img: "img/vitest.png",
     },
     {
         text: "JavaScript",
