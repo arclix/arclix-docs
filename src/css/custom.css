@@ -13,6 +13,16 @@
     font-weight: 700;
 }
 
+.card,
+.card:hover {
+    color: #1c1e21;
+}
+
+.card > p {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
 .menu__link--active:not(.menu__link--sublist) {
     color: var(--ifm-menu-color-primary);
 }
