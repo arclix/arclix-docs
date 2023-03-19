@@ -81,3 +81,9 @@ The commit message contains a succinct description of the change:
 -   use the imperative, present tense: "change" not "changed" nor "changes"
 -   don't capitalize the first letter
 -   no dot (.) at the end
+
+:::warning
+We use [commitlint](https://commitlint.js.org) to restrict the commit messages to follow our convention mentioned above.
+
+So do follow the commit conventions.
+:::
