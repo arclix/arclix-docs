@@ -4,8 +4,8 @@
   <ShortName>Arclix</ShortName>
   <Description>Search Arclix</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://arclix.github.io/img/favicon.png</Image>
-  <Url type="text/html" method="get" template="https://arclix.github.io/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://arclix.github.io/opensearch.xml" />
-  <moz:SearchForm>https://arclix.github.io/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://arclix.github.io/arclix-docs/img/favicon.png</Image>
+  <Url type="text/html" method="get" template="https://arclix.github.io/arclix-docs/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://arclix.github.io/arclix-docs/opensearch.xml" />
+  <moz:SearchForm>https://arclix.github.io/arclix-docs/</moz:SearchForm>
 </OpenSearchDescription>
