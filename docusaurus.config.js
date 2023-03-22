@@ -14,6 +14,7 @@ const config = {
     baseUrl: "/arclix-docs",
     organizationName: "arclix",
     projectName: "arclix-docs",
+    trailingSlash: false,
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
     i18n: {
