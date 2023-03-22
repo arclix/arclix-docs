@@ -7,7 +7,7 @@ const sidebars = {
             label: "Create App",
             collapsed: false,
             items: [
-                "create-app/create-an-app",
+                "create-app/create",
                 "create-app/project-structure",
                 "create-app/available-scripts",
             ],
