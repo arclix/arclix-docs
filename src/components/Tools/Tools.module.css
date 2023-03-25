@@ -27,3 +27,13 @@
     width: 70px;
     filter: invert(var(--ifm-tool-img-filter));
 }
+
+@media screen and (max-width: 500px) {
+    .tool {
+        padding: 2rem 1rem;
+    }
+
+    .tool__img {
+        width: 50px;
+    }
+}
