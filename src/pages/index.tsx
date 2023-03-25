@@ -4,6 +4,7 @@ import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import HomepageHeader from "../components/HomepageHeader/HomepageHeader";
 import GetStarted from "../components/GetStarted/GetStarted";
 import Tools from "../components/Tools/Tools";
+import CommandShowCase from "../components/CommandShowCase/CommandShowCase";
 
 export default function Home(): JSX.Element {
     return (
@@ -14,6 +15,7 @@ export default function Home(): JSX.Element {
             <HomepageHeader />
             <main>
                 <HomepageFeatures />
+                <CommandShowCase />
                 <GetStarted />
                 <Tools />
             </main>

@@ -1,0 +1,147 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+.overlayContainer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 480px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(9, 211, 172, 0.35) 0%,
+        rgba(97, 218, 251, 0.25) 100%
+    );
+    filter: blur(72px);
+    margin-top: 5rem;
+}
+
+.terminalContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 4rem 7rem;
+    height: 100%;
+}
+
+.terminalHeader {
+    width: 65%;
+    font-size: 2.3rem;
+    text-align: center;
+    letter-spacing: -0.025em !important;
+    margin-bottom: 2rem;
+    color: var(--ifm-hero-tag-title-color);
+}
+
+.primaryText {
+    color: #21af90;
+    font-weight: 700;
+}
+
+.command {
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: "Source Code Pro", sans-serif;
+}
+
+.question {
+    color: #ffd028;
+    font-weight: 700;
+}
+
+.answer {
+    color: #0cc3f0;
+    font-weight: 600;
+}
+
+.tick,
+.created {
+    color: #26ca05;
+    font-weight: 700;
+}
+
+.terminal {
+    width: 70%;
+    height: 400px;
+    padding: 2rem;
+    background: #1f1f1f;
+    border-radius: 10px;
+    font-family: "Source Code Pro", sans-serif;
+}
+
+.terminalHeading,
+.terminalPara {
+    color: #ffffff;
+}
+
+.terminalPara {
+    animation: fadeInDown 0.5s;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .terminalContainer {
+        padding: 4rem 1rem;
+    }
+
+    .terminal {
+        width: 90%;
+    }
+
+    .terminalHeader {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .terminal {
+        width: 100%;
+    }
+
+    .terminalHeader {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .terminal {
+        height: 500px;
+    }
+
+    .terminalHeader {
+        font-size: 2rem;
+    }
+
+    .terminalContainer {
+        padding: 2rem 1rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .terminal {
+        height: 530px;
+    }
+
+    .terminalHeader {
+        font-size: 1.75rem;
+    }
+}
+@media screen and (max-width: 350px) {
+    .terminal {
+        height: 600px;
+    }
+}
