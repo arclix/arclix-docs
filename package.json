@@ -15,7 +15,7 @@
         "lint": "eslint --ext .tsx --cache .",
         "format": "npm run prettier && npm run lint",
         "format:check": "npm run prettier:check && npm run lint",
-        "verify": "npm run build && npm run format:check",
+        "verify": "npm run build && npm run format",
         "pre-commit": "npm run verify",
         "write-translations": "docusaurus write-translations",
         "write-heading-ids": "docusaurus write-heading-ids",
