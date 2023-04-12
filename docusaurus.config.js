@@ -21,7 +21,9 @@ const config = {
         defaultLocale: "en",
         locales: ["en"],
     },
-
+    customFields: {
+        version: "ARCLIX v0.1.2",
+    },
     plugins: [
         [
             "content-docs",
@@ -65,7 +67,7 @@ const config = {
                 title: "",
                 logo: {
                     alt: "Arclix Logo",
-                    src: "img/arclix.png",
+                    src: "svg/arclix-icon.svg",
                 },
                 items: [
                     {

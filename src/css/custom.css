@@ -13,9 +13,17 @@
     font-weight: 700;
 }
 
+.card {
+    background-color: var(--ifm-col-background-color);
+    border: none !important;
+}
 .card,
 .card:hover {
-    color: #1c1e21;
+    color: var(--ifm-hero-tag-title-color);
+}
+
+.card:hover {
+    outline: 2px solid #21af90;
 }
 
 .card > p {

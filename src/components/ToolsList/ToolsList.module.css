@@ -1,0 +1,15 @@
+.tool {
+    padding: 4rem 1rem;
+}
+
+.tool__title {
+    text-align: center;
+}
+
+.tools > a > img {
+    filter: invert(calc(var(--ifm-tool-img-filter) + 0.3));
+}
+
+.tools > a:hover > img {
+    filter: invert(var(--ifm-tool-img-filter)) !important;
+}

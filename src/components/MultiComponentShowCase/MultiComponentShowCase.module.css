@@ -1,0 +1,89 @@
+.multi-component__title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--ifm-hero-tag-title-color);
+}
+
+.multi-component__btn {
+    width: fit-content;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--ifm-hero-button-color) !important;
+    border-radius: 2rem !important;
+    background: var(--ifm-hero-button-background-color);
+}
+
+.primaryText {
+    color: #21af90;
+    font-weight: 700;
+}
+
+.command {
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: "Source Code Pro", sans-serif;
+}
+
+.question {
+    color: #ffd028;
+    font-weight: 700;
+}
+
+.answer {
+    color: #0cc3f0;
+    font-weight: 600;
+}
+
+.tick,
+.created {
+    color: #26ca05;
+    font-weight: 700;
+}
+
+.terminalHeading,
+.terminalPara {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    .multi-component__title {
+        text-align: center;
+    }
+
+    .multi-component__btn {
+        text-align: center;
+    }
+
+    .terminalHeader {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .multi-component__title {
+        font-size: 2.2rem;
+        background: linear-gradient(210deg, rgb(9 211 172) 30%, #4b4b52);
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+
+    .multi-component__btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .terminalHeader {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .multi-component__title,
+    .terminalHeader {
+        font-size: 1.75rem;
+    }
+}

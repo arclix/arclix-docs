@@ -3,29 +3,24 @@
 .overlayContainer {
     position: absolute;
     left: 0;
-    right: 0;
-    height: 480px;
+    right: 40%;
+    height: 400px;
     background-image: linear-gradient(
         180deg,
         rgba(9, 211, 172, 0.35) 0%,
         rgba(97, 218, 251, 0.25) 100%
     );
     filter: blur(72px);
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .terminalContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     position: relative;
-    padding: 4rem 7rem 0rem 7rem;
+    width: 100%;
     height: 100%;
 }
 
 .terminalHeader {
-    width: 70%;
     font-size: 2.3rem;
     text-align: center;
     letter-spacing: -0.025em !important;
@@ -61,12 +56,7 @@
 }
 
 .terminal {
-    width: 70%;
-    height: 400px;
-    padding: 2rem;
-    background: #1f1f1f;
-    border-radius: 10px;
-    font-family: "Source Code Pro", sans-serif;
+    height: 440px !important;
 }
 
 .terminalHeading,
@@ -76,6 +66,15 @@
 
 .terminalPara {
     animation: fadeInDown 0.5s;
+}
+
+.content {
+    padding: 0 2rem;
+}
+
+.contentPara {
+    font-size: 1.1rem;
+    letter-spacing: 0.3px;
 }
 
 @keyframes fadeInDown {
@@ -95,45 +94,43 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .terminalContainer {
-        padding: 4rem 1rem 0 1rem;
-    }
-
     .terminal {
-        width: 90%;
-    }
-
-    .terminalHeader {
-        width: 80%;
+        height: 500px !important;
     }
 }
 
 @media screen and (max-width: 768px) {
     .terminal {
-        width: 100%;
+        height: 440px !important;
     }
 
-    .terminalHeader {
-        width: 100%;
+    .overlayContainer {
+        margin-top: 50%;
+        right: 0;
     }
 }
 
 @media screen and (max-width: 500px) {
     .terminal {
-        height: 500px;
+        height: 550px !important;
     }
 
     .terminalHeader {
         font-size: 2rem;
     }
 
-    .terminalContainer {
-        padding: 2rem 1rem;
+    .terminalContainer,
+    .content {
+        padding: 0;
+    }
+
+    .tool__container {
+        margin-top: 2rem;
     }
 }
 @media screen and (max-width: 400px) {
     .terminal {
-        height: 530px;
+        height: 580px !important;
     }
 
     .terminalHeader {
@@ -142,6 +139,6 @@
 }
 @media screen and (max-width: 350px) {
     .terminal {
-        height: 600px;
+        height: 640px !important;
     }
 }

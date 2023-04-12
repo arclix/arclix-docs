@@ -1,0 +1,66 @@
+.config__img {
+    padding: 1em;
+}
+
+.config__content {
+    padding: 1rem;
+}
+
+.config__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background-image: linear-gradient(180deg, rgb(9 211 172) 30%, #4b4b52);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.config__code {
+    display: block;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    background: var(--ifm-col-background-color);
+}
+
+.config__text {
+    font-size: 1.1rem;
+    letter-spacing: 0.3px;
+}
+
+.key {
+    color: #c792e0;
+}
+
+.value {
+    color: #c3e88d;
+}
+
+@media screen and (max-width: 1024px) {
+    .config__title {
+        background: linear-gradient(210deg, rgb(9 211 172) 40%, #616170);
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .config__title {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .config__title {
+        font-size: 2.2rem;
+    }
+
+    .config__code {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .config__title {
+        font-size: 1.75rem;
+    }
+}

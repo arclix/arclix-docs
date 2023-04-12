@@ -1,61 +1,37 @@
 import React from "react";
 import styles from "./Tools.module.css";
 
-const tools = [
-    {
-        text: "React",
-        img: "img/react.png",
-    },
-    {
-        text: "Node",
-        img: "img/node.png",
-    },
-    {
-        text: "Prettier",
-        img: "img/prettier.png",
-    },
-    {
-        text: "ESLint",
-        img: "img/eslint.png",
-    },
-    {
-        text: "Vitest",
-        img: "img/vitest.png",
-    },
-    {
-        text: "JavaScript",
-        img: "img/javascript.png",
-    },
-    {
-        text: "TypeScript",
-        img: "img/typescript.png",
-    },
-    {
-        text: "CSS",
-        img: "img/css.png",
-    },
-    {
-        text: "Sass",
-        img: "img/sass.png",
-    },
-];
+interface Tool {
+    img: string;
+    name: string;
+    link: string;
+}
 
-const Tools = () => {
+interface Props {
+    className?: string;
+    tools: Tool[];
+}
+
+const Tools: React.FC<Props> = (props) => {
+    const cssClass = props.className
+        ? `${styles["tool__container"]} ${props.className}`
+        : styles["tool__container"];
     return (
-        <article className={`container ${styles.tool}`}>
-            <h1 className={styles["tool__title"]}>Some Tools Used in Arclix</h1>
-            <section className={styles["tool__container"]}>
-                {tools.map((tool) => (
-                    <div className={styles["tool__row"]}>
-                        <img
-                            className={styles["tool__img"]}
-                            src={tool.img}
-                            alt={`${tool.text} image`}
-                        />
-                        <p>{tool.text}</p>
-                    </div>
-                ))}
-            </section>
+        <article className={cssClass}>
+            {props.tools.map((tool) => (
+                <a
+                    className={styles["tool__row"]}
+                    href={tool.link}
+                    target="_blank"
+                >
+                    <img
+                        className={styles["tool__img"]}
+                        src={tool.img}
+                        alt={tool.name + " icon"}
+                    />
+                    <p className={styles["tool__content"]}>{tool.name}</p>
+                </a>
+            ))}
         </article>
     );
 };
