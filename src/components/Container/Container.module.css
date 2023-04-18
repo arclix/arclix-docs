@@ -1,0 +1,22 @@
+.container {
+    display: grid !important;
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: unset !important;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+}

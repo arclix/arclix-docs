@@ -23,6 +23,7 @@ const sidebars = {
                 "component-generation/example",
             ],
         },
+        "config",
     ],
 };
 

@@ -1,0 +1,9 @@
+{
+    "generate": {
+        "flat": false,
+        "addIndex": false,
+        "skipTest": true,
+        "scopeStyle": true,
+        "defaultPath": "./src/components/"
+    }
+}
