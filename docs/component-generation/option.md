@@ -27,7 +27,7 @@ To generate component and import without foldername use `--addIndex` flag.
 #### Command
 
 ```bash
-npx arclix generate component [COMPONENT NAME] --addIndex
+npx arclix@latest generate component [COMPONENT NAME] --addIndex
 ```
 
 This will create a separate `index.js|.ts` file and export everything within the folder.
@@ -56,7 +56,7 @@ To generate component with scoped style modules use `--scopeStyle` flag.
 #### Command
 
 ```bash
-npx arclix generate component [COMPONENT NAME] --scopeStyle
+npx arclix@latest generate component [COMPONENT NAME] --scopeStyle
 ```
 
 #### Structure
@@ -75,7 +75,7 @@ To generate component without test file use `--skipTest` flag.
 #### Command
 
 ```bash
-npx arclix generate component [COMPONENT NAME] --skipTest
+npx arclix@latest generate component [COMPONENT NAME] --skipTest
 ```
 
 #### Structure
@@ -93,13 +93,13 @@ To generate component at given path use `--path` or `-p` flag.
 #### Command
 
 ```bash
-npx arclix generate component [COMPONENT NAME] --path="<some path>"
+npx arclix@latest generate component [COMPONENT NAME] --path="<some path>"
 ```
 
 or
 
 ```bash
-npx arclix generate component [COMPONENT NAME] -p <some path>
+npx arclix@latest generate component [COMPONENT NAME] -p <some path>
 ```
 
 #### Structure
@@ -120,7 +120,7 @@ To generate component without parent folder use `--flat` flag.
 #### Command
 
 ```bash
-npx arclix generate component [COMPONENT NAME] --flat
+npx arclix@latest generate component [COMPONENT NAME] --flat
 ```
 
 #### Structure

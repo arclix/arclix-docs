@@ -31,7 +31,7 @@ Generate a new React site using the **Arclix**.
 The React app will be added to your project after you run the command:
 
 ```bash
-npx arclix create [PROJECT NAME]
+npx arclix@latest create [PROJECT NAME]
 ```
 
 You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.

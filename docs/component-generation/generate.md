@@ -9,17 +9,19 @@ To generate component go inside any React project created by
 -   [Vite](https://vitejs.dev/)
 -   [Next](https://nextjs.org/)
 -   [Remix](https://remix.run/)
+-   [Gatsby](https://www.gatsbyjs.com/)
+-   [Expo](https://expo.dev/)
 -   [Arclix](https://arclix.github.io/arclix-docs/create-app/create)
 -   [Create React App](https://create-react-app.dev/)
 
 ```bash
-npx arclix generate component [COMPONENT NAME]
+npx arclix@latest generate component [COMPONENT NAME]
 ```
 
 or
 
 ```bash
-npx arclix g c [COMPONENT NAME]
+npx arclix@latest g c [COMPONENT NAME]
 ```
 
 The above command will
@@ -35,7 +37,7 @@ The above command will
 To generate multiple components at once with shared options like `path`, `skipTest`, `flat`, etc. run the following:
 
 ```bash
-npx arclix g c [COMPONENT NAME1] [COMPONENT NAME2] [COMPONENT NAME3]
+npx arclix@latest g c [COMPONENT NAME1] [COMPONENT NAME2] [COMPONENT NAME3]
 ```
 
 #### Structure
@@ -61,7 +63,7 @@ npx arclix g c [COMPONENT NAME1] [COMPONENT NAME2] [COMPONENT NAME3]
 To generate nested components at once with shared options like `path`, `skipTest`, `flat`, etc. run the following:
 
 ```bash
-npx arclix g c [COMPONENT NAME1] [COMPONENT NAME1]/[COMPONENT NAME2]
+npx arclix@latest g c [COMPONENT NAME1] [COMPONENT NAME1]/[COMPONENT NAME2]
 ```
 
 :::info
@@ -70,7 +72,7 @@ Use `/` as separator to denote nesting structure of the component.
 For example: If you want to generate Input and nest it inside Form use the following:
 
 ```bash
-npx arclix g c Form Form/Input
+npx arclix@latest g c Form Form/Input
 ```
 
 :::

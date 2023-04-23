@@ -55,7 +55,9 @@ const ConfigShowCase = () => {
                     </b>{" "}
                     either manually or by the following command:
                 </p>
-                <code className={styles["config__code"]}>npx arclix init</code>
+                <code className={styles["config__code"]}>
+                    npx arclix@latest init
+                </code>
             </section>
         </Container>
     );
