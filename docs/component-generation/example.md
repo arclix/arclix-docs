@@ -7,13 +7,13 @@ sidebar_position: 4
 For example consider that your React project uses `JavaScript` as template and `CSS` as Styling and we generate component using:
 
 ```bash
-npx arclix generate component Hero
+npx arclix@latest generate component Hero
 ```
 
 or
 
 ```bash
-npx arclix g c Hero
+npx arclix@latest g c Hero
 ```
 
 Then the component generated will have the structure:

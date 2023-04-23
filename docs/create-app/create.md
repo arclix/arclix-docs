@@ -9,7 +9,7 @@ sidebar_position: 1
 To create a React app run this command:
 
 ```bash
-npx arclix create [PROJECT NAME]
+npx arclix@latest create [PROJECT NAME]
 ```
 
 :::info

@@ -3,7 +3,7 @@
 Configure `Arclix` component generation by creating `arclix.config.json` either manually or by using the following command:
 
 ```bash
-npx arclix init
+npx arclix@latest init
 ```
 
 :::info
@@ -46,5 +46,5 @@ You can `override` the options in `arclix.config.json`, if you want some `option
 For example: If you want `Contact` to go in `pages` folder but you have configured `defaultPath` in config file to `./src/components/` then you can use `--path` flag to `override` the `defaultPath` **temporarily** only for that component.
 
 ```bash
-npx arclix g c Contact --path="./src/pages/"
+npx arclix@latest g c Contact --path="./src/pages/"
 ```

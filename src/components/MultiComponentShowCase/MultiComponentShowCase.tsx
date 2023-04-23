@@ -19,13 +19,13 @@ const MultiComponentShowCase = () => {
             <br />
             <br />
             <span className={styles.tick}>✓</span> Component{" "}
-            <span className={styles.created}>Container, Notes, Notes/Note</span>{" "}
+            <span className={styles.created}>Heroes, Villain, Heroes/Hero</span>{" "}
             created.
         </>
     );
 
     return (
-        <Container gridTemplateColumns="2fr 1.5fr" flexDirection="column">
+        <Container gridTemplateColumns="repeat(2, 1fr)" flexDirection="column">
             <article>
                 <h3 className={styles["multi-component__title"]}>
                     Multiple and Nested Components
@@ -46,7 +46,7 @@ const MultiComponentShowCase = () => {
                 <h4 className={styles.terminalHeading}>
                     ${" "}
                     <span className={styles.command}>
-                        npx arclix g c Container Notes Notes/Note
+                        npx arclix@latest g c Heroes Villain Heroes/Hero
                     </span>
                 </h4>
                 <p className={styles.terminalPara}>{generateContent}</p>
