@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Generating component
 
-To generate component go inside any React project created by
+To generate component go inside any existing `React` project created by:
 
 -   [Vite](https://vitejs.dev/)
 -   [Next](https://nextjs.org/)
@@ -31,6 +31,10 @@ The above command will
 -   will automatically take `template` and `stylings` for the component from the React project.
 
 -   generate it inside `src` directory by default If you run the command in the root folder.
+
+:::info
+`TypeScript` is the default template for component generation and if the developer wants `JavaScript` as the template they can customize the [`template`](../config.md#configure-template-property) property in `arclix.config.json` file.
+:::
 
 ### Generate multiple components
 

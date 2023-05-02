@@ -21,7 +21,8 @@ If you need to add certain options only while generating a specific component yo
         "addIndex": false,
         "skipTest": false,
         "scopeStyle": false,
-        "defaultPath": "./src/"
+        "template": "tsx",
+        "defaultPath": "./"
     }
 }
 ```
@@ -29,14 +30,24 @@ If you need to add certain options only while generating a specific component yo
 Look into [options](./component-generation/option#flags) for the usage and description of the available options.
 
 :::caution
-Make sure `defaultPath` options is followed by trailing `/`
+Make sure to provide **realtive path** to `defaultPath` option.
 
-For example: If you want the `defaultPath` to be `components` then the property `defaultPath` should look like
+For example: If you want the `defaultPath` to be `components` then the property `defaultPath` should look like:
 
 ```json
-"defaultPath": "./src/components/"
+"defaultPath": "./src/components"
 ```
 
+:::
+
+### Configure template property
+
+By default `TypeScript` is the template for component generation but user can configure it using `template` property in config if they want `JavaScript` as the template.
+
+:::caution
+User can't configure the template for specific component generation using `flags`.
+
+Template is a global property and it can be configured only through **config file** which is common for all component generation in the project.
 :::
 
 ### Override the options for generating a certain component

@@ -22,7 +22,7 @@ const config = {
         locales: ["en"],
     },
     customFields: {
-        version: "ARCLIX v0.1.2",
+        version: "ARCLIX v0.1.3",
     },
     plugins: [
         [
