@@ -4,15 +4,7 @@ sidebar_position: 1
 
 # Generating component
 
-To generate component go inside any existing `React` project created by:
-
--   [Vite](https://vitejs.dev/)
--   [Next](https://nextjs.org/)
--   [Remix](https://remix.run/)
--   [Gatsby](https://www.gatsbyjs.com/)
--   [Expo](https://expo.dev/)
--   [Arclix](https://arclix.github.io/arclix-docs/create-app/create)
--   [Create React App](https://create-react-app.dev/)
+To generate component go inside any existing `React` project and run the following:
 
 ```bash
 npx arclix@latest generate component [COMPONENT NAME]
@@ -50,16 +42,16 @@ npx arclix@latest g c [COMPONENT NAME1] [COMPONENT NAME2] [COMPONENT NAME3]
 [FOLDER]
 └── [COMPONENT NAME1]
     ├── [COMPONENT NAME1].module.css
-    ├── [COMPONENT NAME1].jsx
-    └── [COMPONENT NAME1].test.jsx
+    ├── [COMPONENT NAME1].tsx
+    └── [COMPONENT NAME1].test.tsx
 └── [COMPONENT NAME2]
     ├── [COMPONENT NAME2].module.css
-    ├── [COMPONENT NAME2].jsx
-    └── [COMPONENT NAME2].test.jsx
+    ├── [COMPONENT NAME2].tsx
+    └── [COMPONENT NAME2].test.tsx
 └── [COMPONENT NAME3]
     ├── [COMPONENT NAME3].module.css
-    ├── [COMPONENT NAME3].jsx
-    └── [COMPONENT NAME3].test.jsx
+    ├── [COMPONENT NAME3].tsx
+    └── [COMPONENT NAME3].test.tsx
 ```
 
 ### Generate nested components
@@ -87,12 +79,12 @@ npx arclix@latest g c Form Form/Input
 [FOLDER]
 └── [COMPONENT NAME1]
     ├── [COMPONENT NAME1].module.css
-    ├── [COMPONENT NAME1].jsx
-    └── [COMPONENT NAME1].test.jsx
+    ├── [COMPONENT NAME1].tsx
+    └── [COMPONENT NAME1].test.tsx
     └── [COMPONENT NAME2]
         ├── [COMPONENT NAME2].module.css
-        ├── [COMPONENT NAME2].jsx
-        └── [COMPONENT NAME2].test.jsx
+        ├── [COMPONENT NAME2].tsx
+        └── [COMPONENT NAME2].test.tsx
 ```
 
 :::caution

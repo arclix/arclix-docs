@@ -18,6 +18,7 @@ If you need to add certain options only while generating a specific component yo
 {
     "generate": {
         "flat": false,
+        "addStory": false,
         "addIndex": false,
         "skipTest": false,
         "scopeStyle": false,
@@ -28,17 +29,6 @@ If you need to add certain options only while generating a specific component yo
 ```
 
 Look into [options](./component-generation/option#flags) for the usage and description of the available options.
-
-:::caution
-Make sure to provide **realtive path** to `defaultPath` option.
-
-For example: If you want the `defaultPath` to be `components` then the property `defaultPath` should look like:
-
-```json
-"defaultPath": "./src/components"
-```
-
-:::
 
 ### Configure template property
 

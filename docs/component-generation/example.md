@@ -21,15 +21,15 @@ Then the component generated will have the structure:
 ```
 Hero
 ├── Hero.css
-├── Hero.jsx
-└── Hero.test.jsx
+├── Hero.tsx
+└── Hero.test.tsx
 ```
 
 ```css title="Hero.css"
 // Type some stylings here
 ```
 
-```jsx title="Hero.jsx"
+```tsx title="Hero.tsx"
 import "./Hero.css";
 
 const Hero = () => {
@@ -39,9 +39,9 @@ const Hero = () => {
 export default Hero;
 ```
 
-```jsx title="Hero.test.jsx"
+```tsx title="Hero.test.tsx"
 import { render } from "@testing-library/react";
-import Hero from "./Hero.jsx";
+import Hero from "./Hero.tsx";
 
 test("renders Hero component", () => {
     const { getByText } = render(<Hero />);

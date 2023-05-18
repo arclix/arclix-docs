@@ -5,10 +5,12 @@ import Terminal from "../Terminal/Terminal";
 
 const configTemplate = {
     flat: false,
+    addStory: false,
     addIndex: false,
     skipTest: false,
     scopeStyle: false,
-    defaultPath: "./src/",
+    template: "tsx",
+    defaultPath: "./",
 };
 
 const ConfigShowCase = () => {
