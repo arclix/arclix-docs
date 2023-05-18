@@ -13,6 +13,7 @@ We provide additional options that configures component generation to meet users
 | [--addIndex](#and-import-it-without-folder-name) | Let's to import component without the folder name.<br/> For e.g: Instead of `import Sample from "./Sample/Sample"`<br/> we can do `import { Sample } from "./Sample"` |
 | [--scopeStyle](#with-scoped-style-modules)       | Scopes the style to the component.                                                                                                                                    |
 | [--skipTest](#without-test-file)                 | Skip the test file while generating component.                                                                                                                        |
+| [--addStory](#with-story-file)                   | Adds storybook story to the component                                                                                                                                 |
 | [-p, --path [path]](#at-given-path)              | Generates component based on the path.                                                                                                                                |
 | [-f, --flat](#without-parent-folder)             | Generates component without parent folder.                                                                                                                            |
 | -v, --version                                    | Displays version number of Arclix in use.                                                                                                                             |
@@ -45,8 +46,8 @@ This will create separate file named `index.js|.ts` for each component
 [COMPONENT NAME]
 ├── index.js
 ├── [COMPONENT NAME].css
-├── [COMPONENT NAME].jsx
-└── [COMPONENT NAME].test.jsx
+├── [COMPONENT NAME].tsx
+└── [COMPONENT NAME].test.tsx
 ```
 
 ### With Scoped Style modules
@@ -64,8 +65,8 @@ npx arclix@latest generate component [COMPONENT NAME] --scopeStyle
 ```
 [COMPONENT NAME]
 ├── [COMPONENT NAME].module.css
-├── [COMPONENT NAME].jsx
-└── [COMPONENT NAME].test.jsx
+├── [COMPONENT NAME].tsx
+└── [COMPONENT NAME].test.tsx
 ```
 
 ### Without test file
@@ -83,7 +84,27 @@ npx arclix@latest generate component [COMPONENT NAME] --skipTest
 ```
 [COMPONENT NAME]
 ├── [COMPONENT NAME].css
-└── [COMPONENT NAME].jsx
+└── [COMPONENT NAME].tsx
+```
+
+### With story file
+
+To generate component with story file add `--addStory` flag.
+
+#### Command
+
+```bash
+npx arclix@latest generate component [COMPONENT NAME] --addStory
+```
+
+#### Structure
+
+```
+[COMPONENT NAME]
+├── [COMPONENT NAME].css
+├── [COMPONENT NAME].tsx
+├── [COMPONENT NAME].stories.tsx
+└── [COMPONENT NAME].test.tsx
 ```
 
 ### At given path
@@ -108,8 +129,8 @@ npx arclix@latest generate component [COMPONENT NAME] -p <some path>
 [SOME PATH FOLDER]
 └── [COMPONENT NAME]
     ├── [COMPONENT NAME].css
-    ├── [COMPONENT NAME].jsx
-    └── [COMPONENT NAME].test.jsx
+    ├── [COMPONENT NAME].tsx
+    └── [COMPONENT NAME].test.tsx
 
 ```
 
@@ -127,6 +148,6 @@ npx arclix@latest generate component [COMPONENT NAME] --flat
 
 ```
 ├── [COMPONENT NAME].css
-├── [COMPONENT NAME].jsx
-└── [COMPONENT NAME].test.jsx
+├── [COMPONENT NAME].tsx
+└── [COMPONENT NAME].test.tsx
 ```

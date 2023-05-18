@@ -18,15 +18,9 @@ Arclix is an An Open Source CLI with Creation and Component Generation for React
     -   When installing Node.js, you are recommended to check all checkboxes related to dependencies.
 -   You can also use [nvm](https://github.com/nvm-sh/nvm#installation) (macOS/Linux) or [nvm-windows](https://github.com/coreybutler/nvm-windows#node-version-manager-nvm-for-windows) to switch Node versions between different projects.
 
-## Install Arclix Globally
-
-```bash
-npm i -g arclix@latest
-```
-
 ## Quick Start
 
-Generate a new React site using the **Arclix**.
+Create a new React site using the **Arclix**.
 
 The React app will be added to your project after you run the command:
 
