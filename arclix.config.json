@@ -1,9 +1,14 @@
 {
-    "generate": {
-        "flat": false,
-        "addIndex": false,
-        "skipTest": true,
-        "scopeStyle": true,
-        "defaultPath": "./src/components/"
+    "component": {
+        "default": {
+            "cssPreprocessor": "css",
+            "usesTypeScript": false,
+            "scopeStyle": true,
+            "addStory": false,
+            "addIndex": false,
+            "addTest": false,
+            "flat": false,
+            "path": "src/components"
+        }
     }
 }
