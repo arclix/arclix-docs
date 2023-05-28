@@ -50,12 +50,16 @@ Our configurable `options` simplify CLI configuration, making it easier and more
 
     > **Note**: `./` is the default value for `path`.
 
+    :::caution
+    Only relative path is accepted by the `path` option. So using absolute path may lead to an unexpected error.
+    :::
+
 ### Override the options for generating a certain component
 
 You can `override` the options in `arclix.config.json`, if you want some `options` needed only for generating a certain component by adding the [flags](../component-generation/option#flags).
 
-For example: If you want `Contact` to go in `pages` folder but you have configured `path` in config file to `/src/components` then you can use `--path or -p` flag to `override` the `path` **temporarily** only for that component.
+For example: If you want `Contact` to go in `pages` folder but you have configured `path` in config file to `./src/components` then you can use `--path or -p` flag to `override` the `path` **temporarily** only for that component.
 
 ```bash
-npx arclix@latest g c Contact --path="/src/pages/"
+npx arclix@latest g c Contact --path="./src/pages"
 ```

@@ -21,7 +21,7 @@ For example the user wants certain component like `pages` to have different conf
         },
         "pages": {
             "cssPreprocessor": "pcss",
-            "path": "src/pages"
+            "path": "./src/pages"
         }
     }
 }
