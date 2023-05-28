@@ -122,6 +122,10 @@ or
 npx arclix@latest generate component [COMPONENT NAME] -p <some path>
 ```
 
+:::caution
+Only relative path is accepted by the `path` flag. So using absolute path may lead to an unexpected error.
+:::
+
 #### Structure
 
 ```
