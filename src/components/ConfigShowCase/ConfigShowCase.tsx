@@ -2,15 +2,17 @@ import React from "react";
 import styles from "./ConfigShowCase.module.css";
 import Container from "../Container/Container";
 import Terminal from "../Terminal/Terminal";
+import Link from "@docusaurus/Link";
 
 const configTemplate = {
-    flat: false,
+    cssPreprocessor: "css",
+    usesTypeScript: true,
+    scopeStyle: false,
     addStory: false,
     addIndex: false,
-    skipTest: false,
-    scopeStyle: false,
-    template: "tsx",
-    defaultPath: "./",
+    addTest: false,
+    flat: false,
+    path: "./",
 };
 
 const ConfigShowCase = () => {
@@ -22,11 +24,16 @@ const ConfigShowCase = () => {
             <Terminal>
                 <span style={{ color: "white" }}>{"{\n"}</span>
                 <br />
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                <span className={styles.key}>"default": </span>
+                <span style={{ color: "white" }}>{"{\n"}</span>
+                <br />
                 {Object.keys(configTemplate).map((key) => {
                     return (
-                        <>
+                        <article key={key}>
                             <span>&nbsp;&nbsp;&nbsp;</span>
-                            <span key={key}>
+                            <span>&nbsp;&nbsp;&nbsp;</span>
+                            <span>
                                 <span
                                     className={styles.key}
                                 >{`"${key}": `}</span>
@@ -35,9 +42,12 @@ const ConfigShowCase = () => {
                                 >{`${configTemplate[key]}\n`}</span>
                             </span>
                             <br />
-                        </>
+                        </article>
                     );
                 })}
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                <span style={{ color: "white" }}>{"}\n"}</span>
+                <br />
                 <span style={{ color: "white" }}>{"}"}</span>
             </Terminal>
 
@@ -60,6 +70,12 @@ const ConfigShowCase = () => {
                 <code className={styles["config__code"]}>
                     npx arclix@latest init
                 </code>
+                <Link
+                    className={styles["config__btn"]}
+                    href="/docs/category/arclix-cli-configuration"
+                >
+                    Learn More
+                </Link>
             </section>
         </Container>
     );

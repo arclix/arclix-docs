@@ -7,13 +7,13 @@ sidebar_position: 4
 For example consider that your React project uses `JavaScript` as template and `CSS` as Styling and we generate component using:
 
 ```bash
-npx arclix@latest generate component Hero
+npx arclix@latest generate component Hero --addTest --addStory
 ```
 
 or
 
 ```bash
-npx arclix@latest g c Hero
+npx arclix@latest g c Hero --addTest --addStory
 ```
 
 Then the component generated will have the structure:
@@ -22,6 +22,7 @@ Then the component generated will have the structure:
 Hero
 ├── Hero.css
 ├── Hero.tsx
+├── Hero.stories.tsx
 └── Hero.test.tsx
 ```
 
@@ -30,6 +31,7 @@ Hero
 ```
 
 ```tsx title="Hero.tsx"
+import React from "react";
 import "./Hero.css";
 
 const Hero = () => {
@@ -39,13 +41,18 @@ const Hero = () => {
 export default Hero;
 ```
 
-```tsx title="Hero.test.tsx"
-import { render } from "@testing-library/react";
+```tsx title="Hero.stories.tsx"
+import React from "react";
 import Hero from "./Hero.tsx";
 
-test("renders Hero component", () => {
-    const { getByText } = render(<Hero />);
-    const linkElement = getByText(/Hello, World!/i);
-    expect(linkElement).toBeInTheDocument();
+// type content here...
+```
+
+```tsx title="Hero.test.tsx"
+import React from "react";
+import Hero from "./Hero.tsx";
+
+describe("Hero", () => {
+    // write your tests here...
 });
 ```

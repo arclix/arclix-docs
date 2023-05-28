@@ -23,6 +23,7 @@ const Tools: React.FC<Props> = (props) => {
                     className={styles["tool__row"]}
                     href={tool.link}
                     target="_blank"
+                    key={tool.name}
                 >
                     <img
                         className={styles["tool__img"]}

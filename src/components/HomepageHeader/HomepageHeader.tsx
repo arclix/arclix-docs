@@ -9,7 +9,9 @@ import styles from "./HomepageHeader.module.css";
 const HomepageHeader = () => {
     const { siteConfig } = useDocusaurusContext();
     return (
-        <header className={clsx("hero hero--primary", styles.heroBanner)}>
+        <header
+            className={clsx("hero hero--primary grid-lines", styles.heroBanner)}
+        >
             <article className={`container ${styles.heroContainer}`}>
                 <section className={styles.heroSection}>
                     <h3 className={styles.heroTitle}>Arclix</h3>

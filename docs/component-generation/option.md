@@ -2,22 +2,23 @@
 sidebar_position: 3
 ---
 
-# Additional options
+# CLI options
 
 We provide additional options that configures component generation to meet users needs.
 
 ### Flags
 
-| Flag                                             | Description                                                                                                                                                           |
-| ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [--addIndex](#and-import-it-without-folder-name) | Let's to import component without the folder name.<br/> For e.g: Instead of `import Sample from "./Sample/Sample"`<br/> we can do `import { Sample } from "./Sample"` |
-| [--scopeStyle](#with-scoped-style-modules)       | Scopes the style to the component.                                                                                                                                    |
-| [--skipTest](#without-test-file)                 | Skip the test file while generating component.                                                                                                                        |
-| [--addStory](#with-story-file)                   | Adds storybook story to the component                                                                                                                                 |
-| [-p, --path [path]](#at-given-path)              | Generates component based on the path.                                                                                                                                |
-| [-f, --flat](#without-parent-folder)             | Generates component without parent folder.                                                                                                                            |
-| -v, --version                                    | Displays version number of Arclix in use.                                                                                                                             |
-| -h, --help                                       | Provides help about the use of Arclix.                                                                                                                                |
+| Flag                                                                          | Description                                                                                                                                                           |
+| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [--addIndex](#and-import-it-without-folder-name)                              | Let's to import component without the folder name.<br/> For e.g: Instead of `import Sample from "./Sample/Sample"`<br/> we can do `import { Sample } from "./Sample"` |
+| [--scopeStyle](#with-scoped-style-modules)                                    | Scopes the style to the component.                                                                                                                                    |
+| [--addTest](#with-test-file)                                                  | Adds the test file while generating component.                                                                                                                        |
+| [--addStory](#with-story-file)                                                | Adds storybook story to the component                                                                                                                                 |
+| [-p, --path [path]](#at-given-path)                                           | Generates component based on the path.                                                                                                                                |
+| [-f, --flat](#without-parent-folder)                                          | Generates component without parent folder.                                                                                                                            |
+| [--type [component type]](../arclix-configuration/dynamic-component-types.md) | Specify the component type based on config to be generated.                                                                                                           |
+| -v, --version                                                                 | Displays version number of Arclix in use.                                                                                                                             |
+| -h, --help                                                                    | Provides help about the use of Arclix.                                                                                                                                |
 
 ## Generate component
 
@@ -46,8 +47,7 @@ This will create separate file named `index.js|.ts` for each component
 [COMPONENT NAME]
 ├── index.js
 ├── [COMPONENT NAME].css
-├── [COMPONENT NAME].tsx
-└── [COMPONENT NAME].test.tsx
+└── [COMPONENT NAME].tsx
 ```
 
 ### With Scoped Style modules
@@ -65,18 +65,17 @@ npx arclix@latest generate component [COMPONENT NAME] --scopeStyle
 ```
 [COMPONENT NAME]
 ├── [COMPONENT NAME].module.css
-├── [COMPONENT NAME].tsx
-└── [COMPONENT NAME].test.tsx
+└── [COMPONENT NAME].tsx
 ```
 
-### Without test file
+### With test file
 
-To generate component without test file use `--skipTest` flag.
+To generate component with test file use `--addTest` flag.
 
 #### Command
 
 ```bash
-npx arclix@latest generate component [COMPONENT NAME] --skipTest
+npx arclix@latest generate component [COMPONENT NAME] --addTest
 ```
 
 #### Structure
@@ -84,7 +83,8 @@ npx arclix@latest generate component [COMPONENT NAME] --skipTest
 ```
 [COMPONENT NAME]
 ├── [COMPONENT NAME].css
-└── [COMPONENT NAME].tsx
+├── [COMPONENT NAME].tsx
+└── [COMPONENT NAME].test.tsx
 ```
 
 ### With story file
@@ -103,8 +103,7 @@ npx arclix@latest generate component [COMPONENT NAME] --addStory
 [COMPONENT NAME]
 ├── [COMPONENT NAME].css
 ├── [COMPONENT NAME].tsx
-├── [COMPONENT NAME].stories.tsx
-└── [COMPONENT NAME].test.tsx
+└── [COMPONENT NAME].stories.tsx
 ```
 
 ### At given path
@@ -129,14 +128,13 @@ npx arclix@latest generate component [COMPONENT NAME] -p <some path>
 [SOME PATH FOLDER]
 └── [COMPONENT NAME]
     ├── [COMPONENT NAME].css
-    ├── [COMPONENT NAME].tsx
-    └── [COMPONENT NAME].test.tsx
+    └── [COMPONENT NAME].tsx
 
 ```
 
 ### Without parent folder
 
-To generate component without parent folder use `--flat` flag.
+To generate component without parent folder use `--flat` or `-f` flag.
 
 #### Command
 
@@ -144,10 +142,15 @@ To generate component without parent folder use `--flat` flag.
 npx arclix@latest generate component [COMPONENT NAME] --flat
 ```
 
+or
+
+```bash
+npx arclix@latest generate component [COMPONENT NAME] -f
+```
+
 #### Structure
 
 ```
 ├── [COMPONENT NAME].css
-├── [COMPONENT NAME].tsx
-└── [COMPONENT NAME].test.tsx
+└── [COMPONENT NAME].tsx
 ```

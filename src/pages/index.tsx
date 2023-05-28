@@ -6,6 +6,7 @@ import GetStarted from "../components/ConfigShowCase/ConfigShowCase";
 import Tools from "../components/ToolsList/ToolsList";
 import CommandShowCase from "../components/CommandShowCase/CommandShowCase";
 import MultiComponentShowCase from "../components/MultiComponentShowCase/MultiComponentShowCase";
+import GeneratorFlow from "../components/GeneratorFlow/GeneratorFlow";
 
 export default function Home(): JSX.Element {
     return (
@@ -17,6 +18,7 @@ export default function Home(): JSX.Element {
             <main>
                 <HomepageFeatures />
                 <CommandShowCase />
+                <GeneratorFlow />
                 <MultiComponentShowCase />
                 <GetStarted />
                 <Tools />

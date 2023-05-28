@@ -101,7 +101,7 @@
 
 @media screen and (max-width: 768px) {
     .terminal {
-        height: 440px !important;
+        height: 250px !important;
     }
 
     .overlayContainer {
@@ -112,7 +112,7 @@
 
 @media screen and (max-width: 500px) {
     .terminal {
-        height: 550px !important;
+        height: 300px !important;
     }
 
     .terminalHeader {
@@ -130,15 +130,10 @@
 }
 @media screen and (max-width: 400px) {
     .terminal {
-        height: 580px !important;
+        height: 320px !important;
     }
 
     .terminalHeader {
         font-size: 1.75rem;
-    }
-}
-@media screen and (max-width: 350px) {
-    .terminal {
-        height: 640px !important;
     }
 }

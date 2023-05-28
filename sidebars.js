@@ -4,26 +4,36 @@ const sidebars = {
         "intro",
         {
             type: "category",
-            label: "Create App",
-            collapsed: false,
-            items: [
-                "create-app/create",
-                "create-app/project-structure",
-                "create-app/available-scripts",
-            ],
-        },
-        {
-            type: "category",
             label: "Component Generation",
             collapsed: false,
+            link: {
+                type: "generated-index",
+                title: "Component Generation",
+                description:
+                    "Learn about how to generate component using Arclix.",
+            },
             items: [
                 "component-generation/generate",
-                "component-generation/structure",
                 "component-generation/option",
                 "component-generation/example",
             ],
         },
-        "config",
+        {
+            type: "category",
+            label: "Arclix CLI Configuration",
+            collapsed: false,
+            link: {
+                type: "generated-index",
+                title: "Arclix CLI Configuration",
+                description:
+                    "Learn about how to configure and create Arclix config file.",
+            },
+            items: [
+                "arclix-configuration/config",
+                "arclix-configuration/option",
+                "arclix-configuration/dynamic-component-types",
+            ],
+        },
     ],
 };
 

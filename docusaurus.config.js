@@ -7,8 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: "Arclix",
-    tagline:
-        "An Open Source CLI with Creation and Component Generation for React.",
+    tagline: "An Open Source CLI for Component Generation in React.",
     favicon: "img/favicon.png",
     url: "https://arclix.github.io",
     baseUrl: "/arclix-docs",
@@ -22,7 +21,7 @@ const config = {
         locales: ["en"],
     },
     customFields: {
-        version: "ARCLIX v0.1.4",
+        version: "ARCLIX v0.1.5",
     },
     plugins: [
         [
@@ -63,6 +62,30 @@ const config = {
             colorMode: {
                 defaultMode: "dark",
             },
+            metadata: [
+                {
+                    name: "description",
+                    content:
+                        "Arclix is an open source react component generation cli.",
+                },
+                {
+                    name: "keywords",
+                    content:
+                        "Arclix, React component generation, CLI tool, Component generation CLI, multiple and nested component generation, scalable components, productivity, development workflow",
+                },
+                {
+                    name: "author",
+                    content: "Jitiendran KS and Arclix contributors",
+                },
+                {
+                    name: "robots",
+                    content: "index, follow",
+                },
+                {
+                    name: "viewport",
+                    content: "width=device-width, initial-scale=1.0",
+                },
+            ],
             navbar: {
                 title: "",
                 logo: {
@@ -83,8 +106,8 @@ const config = {
                     },
                     {
                         href: "https://github.com/arclix/core",
-                        label: "GitHub",
                         position: "right",
+                        className: "navbar-github-link",
                     },
                 ],
             },

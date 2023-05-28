@@ -25,7 +25,7 @@ The above command will
 -   generate it inside `src` directory by default If you run the command in the root folder.
 
 :::info
-`TypeScript` is the default template for component generation and if the developer wants `JavaScript` as the template they can customize the [`template`](../config.md#configure-template-property) property in `arclix.config.json` file.
+`TypeScript` is the default template for component generation and if the developer wants `JavaScript` as the template they can set the [`usesTypeScript`](../arclix-configuration/option.md#usestypescript) config property to `false` in `arclix.config.json` file.
 :::
 
 ### Generate multiple components
@@ -41,17 +41,14 @@ npx arclix@latest g c [COMPONENT NAME1] [COMPONENT NAME2] [COMPONENT NAME3]
 ```
 [FOLDER]
 └── [COMPONENT NAME1]
-    ├── [COMPONENT NAME1].module.css
-    ├── [COMPONENT NAME1].tsx
-    └── [COMPONENT NAME1].test.tsx
+    ├── [COMPONENT NAME1].css
+    └── [COMPONENT NAME1].tsx
 └── [COMPONENT NAME2]
-    ├── [COMPONENT NAME2].module.css
-    ├── [COMPONENT NAME2].tsx
-    └── [COMPONENT NAME2].test.tsx
+    ├── [COMPONENT NAME2].css
+    └── [COMPONENT NAME2].tsx
 └── [COMPONENT NAME3]
-    ├── [COMPONENT NAME3].module.css
-    ├── [COMPONENT NAME3].tsx
-    └── [COMPONENT NAME3].test.tsx
+    ├── [COMPONENT NAME3].css
+    └── [COMPONENT NAME3].tsx
 ```
 
 ### Generate nested components
@@ -79,12 +76,10 @@ npx arclix@latest g c Form Form/Input
 [FOLDER]
 └── [COMPONENT NAME1]
     ├── [COMPONENT NAME1].module.css
-    ├── [COMPONENT NAME1].tsx
-    └── [COMPONENT NAME1].test.tsx
+    └── [COMPONENT NAME1].tsx
     └── [COMPONENT NAME2]
         ├── [COMPONENT NAME2].module.css
-        ├── [COMPONENT NAME2].tsx
-        └── [COMPONENT NAME2].test.tsx
+        └── [COMPONENT NAME2].tsx
 ```
 
 :::caution
