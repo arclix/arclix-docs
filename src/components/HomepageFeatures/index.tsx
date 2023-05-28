@@ -15,7 +15,7 @@ const FeatureList: FeatureItem[] = [
         description: (
             <>
                 Learning or configuring anything new is not necessary. You can
-                instantly initiate your work by creating a new project.
+                instantly generate component in any React project.
             </>
         ),
     },
@@ -24,18 +24,18 @@ const FeatureList: FeatureItem[] = [
         img: "img/tool.png",
         description: (
             <>
-                Out of the box support for Component Generation, TypeScript,
-                CSS, SCSS/SASS, Test and more.
+                Out of the box support for Component Generation, TypeScript, CSS
+                preprocessors, Storybook, Test and more.
             </>
         ),
     },
     {
-        title: "Trusty Dependencies",
-        img: "img/trust.png",
+        title: "Flexible Config",
+        img: "img/config.png",
         description: (
             <>
-                We use Create React App, TypeScript and SASS under the hood,
-                which are reliable, well maintained and widely used.
+                Configure how Arclix CLI should generate components according to
+                your needs by creating arclix config file.
             </>
         ),
     },

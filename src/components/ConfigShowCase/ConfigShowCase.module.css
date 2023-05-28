@@ -27,6 +27,22 @@
     letter-spacing: 0.3px;
 }
 
+.config__btn {
+    width: fit-content;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--ifm-hero-button-color) !important;
+    border-radius: 2rem !important;
+    background: var(--ifm-hero-button-background-color);
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
 .key {
     color: #c792e0;
 }
@@ -47,6 +63,10 @@
     .config__title {
         text-align: center;
     }
+
+    .config__btn {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -56,6 +76,11 @@
 
     .config__code {
         padding: 1rem;
+    }
+
+    .config__btn {
+        width: 100%;
+        justify-content: center;
     }
 }
 

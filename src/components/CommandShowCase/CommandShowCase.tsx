@@ -1,6 +1,6 @@
 import Typed from "typed.js";
 import styles from "./CommandShowCase.module.css";
-import React, { ReactElement, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Terminal from "../Terminal/Terminal";
 import Container from "../Container/Container";
@@ -41,56 +41,33 @@ const reactTools = [
 
 const CommandShowCase = () => {
     const commandRef = useRef(null);
-    const [createFinished, setCreateFinished] = useState(false);
     const [generateFinished, setGenerateFinished] = useState(false);
+    const [generateMultipleFinished, setGenerateMultipleFinished] =
+        useState(false);
     const {
         siteConfig: { customFields },
     } = useDocusaurusContext();
 
-    const createContent: ReactElement = (
-        <>
-            <b className={styles.primaryText}>
-                {customFields.version as string}
-            </b>{" "}
-            <br />
-            <br />
-            <span className={styles.question}>? </span> What template would you
-            like to use? <span className={styles.answer}>TypeScript</span>{" "}
-            <br />
-            <span className={styles.question}>? </span> What styling would you
-            like to use? <span className={styles.answer}>SCSS/SASS</span>
-            <br />
-            <span className={styles.tick}>✓</span> Finished installing
-            dependencies <br />
-            <span className={styles.tick}>✓</span> Finished installing
-            additional dependencies <br />
-            <span className={styles.tick}>✓</span> Finished creating{" "}
-            <b className={styles.primaryText}>React.JS </b>
-            project <br />
-            <br />
-            To run the project <br />
-            &nbsp;- cd todo <br />
-            &nbsp;- npm start <br />
-        </>
-    );
-
-    const generateContent: ReactElement = (
-        <>
-            <b className={styles.primaryText}>
-                {customFields.version as string}
-            </b>{" "}
-            <br />
-            <br />
-            <span className={styles.tick}>✓</span> Component{" "}
-            <span className={styles.created}>Hero</span> created
-        </>
-    );
+    const generateContent = (content: string[]) => {
+        const components = content.join(", ");
+        return (
+            <>
+                <b className={styles.primaryText}>
+                    {customFields.version as string}
+                </b>{" "}
+                <br />
+                <br />
+                <span className={styles.tick}>✓</span> Component{" "}
+                <span className={styles.created}>{components}</span> created
+            </>
+        );
+    };
 
     useEffect(() => {
         const typed = new Typed(commandRef.current, {
             strings: [
-                "npx arclix@latest create todo",
                 "npx arclix@latest generate component Hero",
+                "npx arclix@latest generate component Heroes Hero/Heroes",
             ],
             typeSpeed: 65,
             loop: true,
@@ -98,11 +75,11 @@ const CommandShowCase = () => {
             backSpeed: 50,
             onStringTyped: (pos: number) => {
                 if (pos == 0) {
-                    setCreateFinished(true);
-                    setGenerateFinished(false);
-                } else {
-                    setCreateFinished(false);
                     setGenerateFinished(true);
+                    setGenerateMultipleFinished(false);
+                } else {
+                    setGenerateFinished(false);
+                    setGenerateMultipleFinished(true);
                 }
             },
         });
@@ -132,21 +109,23 @@ const CommandShowCase = () => {
 
                             <p
                                 style={{
-                                    display: createFinished ? "block" : "none",
-                                }}
-                                className={styles.terminalPara}
-                            >
-                                {createContent}
-                            </p>
-                            <p
-                                style={{
                                     display: generateFinished
                                         ? "block"
                                         : "none",
                                 }}
                                 className={styles.terminalPara}
                             >
-                                {generateContent}
+                                {generateContent(["Hero"])}
+                            </p>
+                            <p
+                                style={{
+                                    display: generateMultipleFinished
+                                        ? "block"
+                                        : "none",
+                                }}
+                                className={styles.terminalPara}
+                            >
+                                {generateContent(["Heroes, Heroes/Hero"])}
                             </p>
                         </Terminal>
                     </section>
@@ -156,9 +135,9 @@ const CommandShowCase = () => {
                         Are You a React Developer?
                     </h1>
                     <p className={styles.contentPara}>
-                        Take react creation and component generation to the
-                        command line. Component generation is supported in all
-                        existing React projects created by:
+                        Take react component generation to the command line.
+                        Component generation is supported in all existing React
+                        projects created by:
                     </p>
                     <Tools tools={reactTools} />
                 </section>

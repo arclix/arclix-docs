@@ -1,0 +1,58 @@
+svg {
+    width: 100%;
+}
+
+svg path {
+    stroke: var(--ifm-hero-subtitle-color);
+}
+
+svg path:nth-child(2) {
+    stroke: none;
+}
+
+.generatorContainer {
+    overflow: hidden;
+}
+
+.generatedItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.item {
+    padding: 1rem;
+    width: 100%;
+    min-height: 16rem;
+    background: var(--ifm-col-background-color);
+}
+
+.itemIcon {
+    background: var(--ifm-feature-icon-bg);
+    border-radius: 10px;
+    padding: 0.3rem 0.5rem;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.itemImg {
+    width: 35px;
+}
+
+@media screen and (max-width: 768px) {
+    svg {
+        width: unset;
+    }
+    .generatedItems {
+        width: 100%;
+        flex-direction: column;
+    }
+    .item {
+        min-height: unset;
+    }
+}
