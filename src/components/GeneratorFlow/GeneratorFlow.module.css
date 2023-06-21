@@ -26,13 +26,14 @@ svg path:nth-child(2) {
     padding: 1rem;
     width: 100%;
     min-height: 16rem;
+    border-radius: 10px;
     background: var(--ifm-col-background-color);
 }
 
 .itemIcon {
     background: var(--ifm-feature-icon-bg);
-    border-radius: 10px;
-    padding: 0.3rem 0.5rem;
+    border-radius: 50%;
+    padding: 0.6rem;
     width: fit-content;
     display: flex;
     align-items: center;
@@ -41,7 +42,11 @@ svg path:nth-child(2) {
 }
 
 .itemImg {
-    width: 35px;
+    width: 30px;
+}
+
+.itemPara {
+    color: var(--ifm-hero-subtitle-color);
 }
 
 @media screen and (max-width: 768px) {

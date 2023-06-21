@@ -61,5 +61,5 @@ You can `override` the options in `arclix.config.json`, if you want some `option
 For example: If you want `Contact` to go in `pages` folder but you have configured `path` in config file to `./src/components` then you can use `--path or -p` flag to `override` the `path` **temporarily** only for that component.
 
 ```bash
-npx arclix@latest g c Contact --path="./src/pages"
+npx arclix g c Contact --path="./src/pages"
 ```

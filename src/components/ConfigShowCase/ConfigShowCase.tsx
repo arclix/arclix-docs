@@ -3,6 +3,7 @@ import styles from "./ConfigShowCase.module.css";
 import Container from "../Container/Container";
 import Terminal from "../Terminal/Terminal";
 import Link from "@docusaurus/Link";
+import CodeBlock from "@theme/CodeBlock";
 
 const configTemplate = {
     cssPreprocessor: "css",
@@ -56,25 +57,32 @@ const ConfigShowCase = () => {
                     Configure Arclix Generation CLI
                 </h1>
                 <p className={styles["config__text"]}>
-                    Tired of adding flags like "--flat", "--path", etc. to the
-                    command ?
+                    Tired of adding flags like <code>--flat</code>,{" "}
+                    <code>--path</code>, etc. to the command ?
                 </p>
                 <p className={styles["config__text"]}>
-                    Configure the generation part of the CLI by creating
-                    <b>
-                        {" "}
-                        <i>arclix.config.json</i>
-                    </b>{" "}
+                    Configure the generation part of the CLI by creating{" "}
+                    <code>
+                        <b>
+                            <i>arclix.config.json</i>
+                        </b>{" "}
+                    </code>
                     either manually or by the following command:
                 </p>
-                <code className={styles["config__code"]}>
-                    npx arclix@latest init
-                </code>
+                <CodeBlock>npx arclix init</CodeBlock>
+                <p className={styles["config__text"]}>
+                    Create own dynamic component type and define their own
+                    configuration in the config file and{" "}
+                    <Link href="/docs/arclix-configuration/dynamic-component-types">
+                        more
+                    </Link>
+                    .
+                </p>
                 <Link
                     className={styles["config__btn"]}
                     href="/docs/category/arclix-cli-configuration"
                 >
-                    Learn More
+                    Learn More ➜
                 </Link>
             </section>
         </Container>

@@ -270,7 +270,7 @@ const GeneratorFlow = () => {
                             />
                         </div>
                         <h3>{list.title}</h3>
-                        <p>{list.description}</p>
+                        <p className={styles.itemPara}>{list.description}</p>
                     </article>
                 ))}
             </section>

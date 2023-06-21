@@ -66,8 +66,8 @@ const CommandShowCase = () => {
     useEffect(() => {
         const typed = new Typed(commandRef.current, {
             strings: [
-                "npx arclix@latest generate component Hero",
-                "npx arclix@latest generate component Heroes Hero/Heroes",
+                "npx arclix generate component Hero",
+                "npx arclix generate component Heroes Hero/Heroes",
             ],
             typeSpeed: 65,
             loop: true,

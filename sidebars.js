@@ -14,6 +14,7 @@ const sidebars = {
             },
             items: [
                 "component-generation/generate",
+                "component-generation/multiple-nested",
                 "component-generation/option",
                 "component-generation/example",
             ],

@@ -20,7 +20,7 @@ const Feature: React.FC<Props> = ({ title, img, description }) => {
                     />
                 </div>
                 <h3>{title}</h3>
-                <p>{description}</p>
+                <p className={styles["feature__para"]}>{description}</p>
             </div>
         </div>
     );

@@ -24,7 +24,7 @@ const HomepageHeader = () => {
                             className={`button button--secondary button--lg hero__button ${styles.heroButton}`}
                             to="/docs/intro"
                         >
-                            GET STARTED
+                            GET STARTED ➜
                         </Link>
                         <Link
                             className={`button button--secondary button--lg hero__button ${styles.heroButton} ${styles.githubButton}`}

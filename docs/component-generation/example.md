@@ -4,16 +4,16 @@ sidebar_position: 4
 
 # Example Component
 
-For example consider that your React project uses `JavaScript` as template and `CSS` as Styling and we generate component using:
+For example consider that your React project uses `TypeScript` as template and `CSS` as Styling and we generate component using:
 
 ```bash
-npx arclix@latest generate component Hero --addTest --addStory
+npx arclix generate component Hero --addTest --addStory
 ```
 
 or
 
 ```bash
-npx arclix@latest g c Hero --addTest --addStory
+npx arclix g c Hero --addTest --addStory
 ```
 
 Then the component generated will have the structure:

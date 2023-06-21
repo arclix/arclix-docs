@@ -37,16 +37,16 @@ const MultiComponentShowCase = () => {
                 </List>
                 <Link
                     className={styles["multi-component__btn"]}
-                    href="/docs/component-generation/generate#generate-multiple-components"
+                    href="/docs/component-generation/multiple-nested"
                 >
-                    Learn More
+                    Learn More ➜
                 </Link>
             </article>
             <Terminal>
                 <h4 className={styles.terminalHeading}>
                     ${" "}
                     <span className={styles.command}>
-                        npx arclix@latest g c Heroes Villain Heroes/Hero
+                        npx arclix g c Heroes Villain Heroes/Hero
                     </span>
                 </h4>
                 <p className={styles.terminalPara}>{generateContent}</p>
