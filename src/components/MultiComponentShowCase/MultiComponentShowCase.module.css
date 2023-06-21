@@ -11,11 +11,30 @@
     align-items: center;
     gap: 0.5rem;
     padding: 0.75rem 1.5rem;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1rem;
-    color: var(--ifm-hero-button-color) !important;
+    color: rgb(11, 199, 161) !important;
     border-radius: 2rem !important;
-    background: var(--ifm-hero-button-background-color);
+    background: var(--ifm-feature-bg);
+}
+
+.multi-component__btn:hover {
+    text-decoration: none;
+    animation: pulse 1s ease-in-out;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
 }
 
 .primaryText {

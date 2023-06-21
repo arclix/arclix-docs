@@ -4,11 +4,11 @@ sidebar_position: 1
 
 # Contribution to Core
 
-[Arclix](https://arclix.github.io/arclix-docs) is an open source React creation and component generation CLI made to make the work of React developers easier. If you're interested in contributing to Arclix, hopefully, this document makes the process for contributing clear.
+[Arclix](https://arclix.github.io/arclix-docs) is an open source React component generation CLI made to make the work of React developers easier. If you're interested in contributing to Arclix, hopefully, this document makes the process for contributing clear.
 
 ### Prerequisites
 
-1. Make sure you have [Node.js](https://nodejs.org/) which includes `npm` greater than v12.
+1. Make sure you have [Node.js](https://nodejs.org/) which includes `npm` greater than v16.
 
 ### Repo Setup
 
@@ -38,7 +38,7 @@ Unit tests are powered by [vitest](https://vitest.dev/). The detailed configurat
     ```
 
 :::caution
-Do maintain the `branches` and `functions` greater than `50%` in the coverage.
+Do maintain the `branches` and `functions` greater than `70%` in the coverage.
 :::
 
 ### Pull Request Guidelines

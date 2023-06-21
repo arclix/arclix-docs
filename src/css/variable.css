@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,700&display=swap");
+
 :root {
     --ifm-color-primary: #ffffff;
     --ifm-color-primary-dark: #29784c;
@@ -21,16 +23,23 @@
     --ifm-footer-theme-background-color: #ffffff;
     --ifm-footer-theme-color: #4b4b52;
     --ifm-hero-tag-title-color: #4b4b52;
+    --ifm-feature-bg: rgb(202 255 230);
     --ifm-feature-icon-bg: #e3e3e5;
     --ifm-footer-theme-border-color: #60677037;
     --ifm-header-theme-border-color: #60677037;
     --ifm-tool-img-filter: 0.5;
-    --ifm-breadcrumb-item-background-active: rgba(9, 211, 172, 0.93) 30%;
-    --ifm-breadcrumb-color-active: #21222c;
-    --ifm-menu-color-primary: rgba(9, 211, 172, 0.85);
+    --ifm-breadcrumb-item-background-active: var(--ifm-feature-bg);
+    --ifm-breadcrumb-color-active: rgb(9, 211, 172);
+    --ifm-menu-color-primary: rgba(9, 211, 172);
     --ifm-menu-color-active: #21222c;
     --ifm-card-background-color: rgba(9, 211, 172, 0.85);
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+    --ifm-font-family-base: "Work Sans", system-ui, -apple-system, Segoe UI,
+        Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont,
+        "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol";
+    --ifm-tabs-color-active-border: var(--ifm-menu-color-primary);
+    --ifm-tabs-color-active: var(--ifm-menu-color-primary);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -43,19 +52,20 @@
     --ifm-color-primary-lighter: #32d8b4;
     --ifm-color-primary-lightest: #4fddbf;
     --ifm-navbar-background-color: #21222c;
-    --ifm-navbar-shadow: 0 1px 0 0 hsla(0, 0%, 100%, 0.1);
+    --ifm-header-theme-border-color: hsla(0, 0%, 100%, 0.1);
+    --ifm-navbar-shadow: 0 1px 0 0 var(--ifm-header-theme-border-color);
     --ifm-link-color: rgba(9, 211, 172);
     --ifm-link-hover-color: #ffffff;
     --ifm-hero-subtitle-color: #a7a9b6;
+    --ifm-hero-tag-title-color: #dfdfd6;
     --ifm-grid-line-color: rgb(167, 169, 182, 0.07);
     --ifm-hero-button-color: #ffffff;
-    --ifm-col-background-color: rgb(43, 46, 58);
+    --ifm-col-background-color: rgba(43, 46, 58, 0.7);
     --ifm-footer-theme-background-color: #21222c !important;
-    --ifm-footer-theme-border-color: hsla(0, 0%, 100%, 0.1);
-    --ifm-header-theme-border-color: hsla(0, 0%, 100%, 0.1);
-    --ifm-footer-theme-color: #dfdfd6;
-    --ifm-hero-tag-title-color: #dfdfd6;
-    --ifm-feature-icon-bg: #21222c;
+    --ifm-footer-theme-border-color: var(--ifm-header-theme-border-color);
+    --ifm-footer-theme-color: var(--ifm-hero-tag-title-color);
+    --ifm-feature-bg: rgba(9, 211, 172, 0.1);
+    --ifm-feature-icon-bg: var(--ifm-color-primary);
     --ifm-tool-img-filter: 0;
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }

@@ -3,7 +3,7 @@
 Configure `Arclix` component generation by creating `arclix.config.json` either manually or by using the following command:
 
 ```bash
-npx arclix@latest init
+npx arclix init
 ```
 
 :::info

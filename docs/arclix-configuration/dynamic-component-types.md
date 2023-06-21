@@ -2,9 +2,9 @@
 
 Developers can create their own component type in the `config` file for their project which has it's own configuration.
 
-If the user wants to generate certain components every time with certain configuration and not the common configuration in config file they can now create their own `type` for the component and add the `type` along with it's configuration in the config file.
+If you to generate certain components every time with certain configuration and not the common configuration in config file you can now create your own `type` for the component and add the `type` along with it's configuration in the config file.
 
-For example the user wants certain component like `pages` to have different configuration than the `default` one then they could add any name for the type in the config file like:
+For example: If you want certain component like `pages` to have different configuration than the `default` one then you could add any name for the type in the config file like:
 
 ```json title="arclix.config.json"
 {
@@ -27,10 +27,10 @@ For example the user wants certain component like `pages` to have different conf
 }
 ```
 
-For this example we took the name as `pages`, user can name anything they want. So to use this `pages` configuration while generating the component, run the generate command with `--type` flag like:
+For this example we took the name as `pages`, you can name anything they want. So to use this `pages` configuration while generating the component, run the generate command with `--type` flag like:
 
 ```bash
-npx arclix@latest g c UserPage --type=pages
+npx arclix g c UserPage --type=pages
 ```
 
 Here, `--type` flag accepts only the valid types provided in the config file.

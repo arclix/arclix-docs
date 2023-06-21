@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ### Overview
 
-Arclix is an Open Source CLI for Component Generation in React. It offers faster and developer friendly environment with rich features.
+[Arclix](https://github.com/arclix/core) is an Open Source CLI for Component Generation in React. It offers faster and developer friendly environment with rich features.
 
 -   Instantly generate component in any React project.
 -   Provides out-of-box support for TypeScript, CSS preprocessors, Storybook, Test and more.
@@ -20,10 +20,30 @@ Arclix is an Open Source CLI for Component Generation in React. It offers faster
 
 ## Quick Start
 
-To generate component go inside any existing React project and run the following:
+To use `Arclix` in your project, do one of the following:
 
-```bash
-npx arclix@latest generate component [COMPONENT NAME]
+### 1. Install `Arclix` as `devDependency` in your project
+
+You can install the package using npm or yarn or pnpm.
+
+```bash npm2yarn
+npm install -D arclix@latest
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+### 2. Install `Arclix` as `global` package in your system
+
+You can install the package using npm or yarn or pnpm.
+
+```bash npm2yarn
+npm install -g arclix@latest
+```
+
+### 3. No need to install `Arclix` manually in your system or project
+
+You can use [npx](https://docs.npmjs.com/cli/v7/commands/npx) command to use `arclix` commands without actually installing anything.
+
+> **_Note_**: This method of using `arclix` is comparatively slow than other two methods.
+
+:::tip Recommended
+Installing `Arclix` as `devDependency` is the recommended installation.
+:::

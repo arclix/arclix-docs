@@ -12,22 +12,27 @@
 }
 
 .featureIcon {
-    background: var(--ifm-feature-icon-bg);
+    background: var(--ifm-feature-bg);
     border-radius: 10px;
-    padding: 0.3rem 0.5rem;
+    padding: 0.6rem;
     width: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
+    border-radius: 50%;
 }
 
 .featureImg {
-    width: 35px;
+    width: 30px;
 }
 
 .feature__card {
     background: var(--ifm-col-background-color) !important;
     padding: 1rem 2rem !important;
     border-radius: 10px;
+}
+
+.feature__para {
+    color: var(--ifm-hero-subtitle-color);
 }

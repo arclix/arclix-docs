@@ -5,6 +5,14 @@
 @import "/src/css/searchbar.css";
 @import "/src/css/markdown.css";
 
+a {
+    font-weight: 500;
+}
+
+code {
+    font-weight: 500;
+}
+
 .main-wrapper {
     background: var(--ifm-color-primary);
 }
@@ -30,22 +38,31 @@
     outline: 2px solid #21af90;
 }
 
-.card:hover h2 {
-    color: var(--ifm-menu-color-primary);
-}
-
 .card > p {
     font-size: 0.85rem;
     font-weight: 500;
 }
 
+.menu__link {
+    line-height: 1.5;
+    font-size: 0.95rem;
+    color: var(--ifm-hero-subtitle-color);
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
 .menu__link--active:not(.menu__link--sublist) {
     color: var(--ifm-menu-color-primary);
+    background: var(--ifm-feature-bg);
+    border-right: 4px solid var(--ifm-menu-color-primary);
 }
 
 .menu__list-item-collapsible .menu__link:hover,
 .menu__list-item-collapsible .menu__link--active {
     color: var(--ifm-menu-color-primary) !important;
+}
+
+.menu__caret:before {
+    background: var(--ifm-menu-link-sublist-icon) 50% / 1.5rem 1.5rem;
 }
 
 .table-of-contents__link:hover,
