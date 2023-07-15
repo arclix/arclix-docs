@@ -54,6 +54,10 @@ Our configurable `options` simplify CLI configuration, making it easier and more
     Only relative path is accepted by the `path` option. So using absolute path may lead to an unexpected error.
     :::
 
+-   ## [`customTemplate`](../arclix-configuration/custom-templates)
+
+    Takes an object structure with valid properties like `component`, `style`, `story` and `test` that allows user to provide their own custom templates for the component they want to generate [more](../arclix-configuration/custom-templates).
+
 ### Override the options for generating a certain component
 
 You can `override` the options in `arclix.config.json`, if you want some `options` needed only for generating a certain component by adding the [flags](../component-generation/option#flags).
