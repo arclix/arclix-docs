@@ -33,6 +33,7 @@ const sidebars = {
                 "arclix-configuration/config",
                 "arclix-configuration/option",
                 "arclix-configuration/dynamic-component-types",
+                "arclix-configuration/custom-templates",
             ],
         },
     ],
